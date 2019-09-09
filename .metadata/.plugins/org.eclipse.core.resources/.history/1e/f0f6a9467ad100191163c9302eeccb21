@@ -1,0 +1,26 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class Read_TXT_file {
+
+	private static final String FILENAME = "C:\\\\Users\\\\HP\\\\Desktop\\\\the-file-name.txt";
+
+	 public static void main(String[] args) {
+
+	  try (BufferedReader br = new BufferedReader(new FileReader(FILENAME))) {
+
+	   String strCurrentLine;
+
+	   while ((strCurrentLine = br.readLine()) != null) {
+	    System.out.println(strCurrentLine);
+	   }
+
+	  } catch (IOException e) {
+	   e.printStackTrace();
+	  }
+	 }
+	}
+
+

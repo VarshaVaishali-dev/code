@@ -1,0 +1,27 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.PrintWriter;
+
+public class Read_TXT_file {
+
+	public static void main(String[] args) {
+		try {
+			PrintWriter writer = new PrintWriter("C:\\Users\\HP\\Desktop\\New-file-name.txt", "UTF-8");
+			BufferedReader br=null;
+			FileReader fr=null;
+			fr=new FileReader("C:\\Users\\HP\\Desktop\\the-file-name.txt");
+			br=new BufferedReader(fr);
+			String currentLine="";
+			while((currentLine=br.readLine()) != null) {
+				System.out.println(currentLine);
+			}
+		}
+		catch (Exception e){
+			e.printStackTrace();
+		}
+		finally{
+			
+		}
+	}
+
+}

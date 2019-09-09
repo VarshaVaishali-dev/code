@@ -1,0 +1,18 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class Read_TXT_file {
+
+	public static void main(String[] args) {
+		try {
+			BufferedReader br=null;
+			FileReader fr=null;
+			fr=new FileReader(C:\\Users\\HP\\Desktop\\the-file-name.txt"");
+		}
+		catch (Exception e){
+			e.printStackTrace();
+		}
+
+	}
+
+}

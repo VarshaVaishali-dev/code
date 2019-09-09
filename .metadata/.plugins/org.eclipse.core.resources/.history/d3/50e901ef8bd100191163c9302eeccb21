@@ -1,0 +1,10 @@
+
+public class ReadExcel {
+	
+	public static void main(String args []) {
+	
+	String fileName="C:\\Users\\HP\\Desktop\\test.xls";
+	}
+	
+}
+
